@@ -32,6 +32,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
+        viewBinding true
         dataBinding true
     }
 }
@@ -43,6 +44,9 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "com.google.android.material:material:$material_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+
+    // Timber
+    implementation "com.jakewharton.timber:timber:$timber_version"
 
     // Lottie
     implementation "com.airbnb.android:lottie:$lottie_version"

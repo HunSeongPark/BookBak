@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/books_fragment"
+    android:id="@+id/nav_graph">
+
+    <fragment android:id="@+id/books_fragment"
+        android:name="com.hunseong.bookbak.ui.books.BooksFragment"
+        tools:layout="@layout/fragment_books">
+    </fragment>
+
+    <fragment android:id="@+id/report_fragment"
+        android:name="com.hunseong.bookbak.ui.report.ReportFragment"
+        tools:layout="@layout/fragment_report">
+    </fragment>
+
+    <fragment android:id="@+id/favorite_fragment"
+        android:name="com.hunseong.bookbak.ui.favorite.FavoriteFragment"
+        tools:layout="@layout/fragment_favorite">
+    </fragment>
+
+    <fragment android:id="@+id/my_fragment"
+        android:name="com.hunseong.bookbak.ui.my.MyFragment"
+        tools:layout="@layout/fragment_my">
+    </fragment>
+
+</navigation>

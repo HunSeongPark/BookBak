@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- app default color -->
+    <color name="brown">#bf771b</color>
+    <color name="brown_light">#f6a64c</color>
+    <color name="brown_dark">#8a4b00</color>
 </resources>

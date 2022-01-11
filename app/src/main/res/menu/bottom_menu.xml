@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/books"
+        android:icon="@drawable/ic_book"
+        android:id="@+id/books_fragment"/>
+    <item android:title="@string/report"
+        android:icon="@drawable/ic_brush"
+        android:id="@+id/report_fragment"/>
+    <item android:title="@string/favorite"
+        android:icon="@drawable/ic_heart"
+        android:id="@+id/favorite_fragment"/>
+    <item android:title="@string/my_page"
+        android:icon="@drawable/ic_cafe"
+        android:id="@+id/my_fragment"/>
+</menu>
