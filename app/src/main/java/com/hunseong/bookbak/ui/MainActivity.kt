@@ -8,6 +8,7 @@ import com.hunseong.bookbak.R
 import com.hunseong.bookbak.databinding.ActivityMainBinding
 import com.hunseong.bookbak.extensions.gone
 import com.hunseong.bookbak.extensions.visible
+import com.hunseong.bookbak.util.KeepStateNavigator
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,7 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initNavigation() {
-        val navController = (supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment).navController
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment
+        val navController = navHostFragment.navController
 
         // 바텀 탭 제외 bottom nav gone 처리
         navController.addOnDestinationChangedListener { _, destination, _ ->
@@ -33,6 +35,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        val navigator = KeepStateNavigator(this, navHostFragment.childFragmentManager, R.id.main_container)
+        navController.navigatorProvider.addNavigator(navigator)
+
+        navController.setGraph(R.navigation.nav_graph)
 
         // 바텀 네비게이션 뷰와 navController 연결
         binding.bottomNav.setupWithNavController(navController)
