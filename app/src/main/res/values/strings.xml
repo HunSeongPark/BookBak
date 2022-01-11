@@ -5,4 +5,9 @@
     <string name="favorite">즐겨찾기</string>
     <string name="my_page">마이페이지</string>
     <string name="bookbak">BookBak</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">로그인</string>
+    <string name="signup_to_email">이메일로 회원가입</string>
+    <string name="signup">회원가입</string>
 </resources>
