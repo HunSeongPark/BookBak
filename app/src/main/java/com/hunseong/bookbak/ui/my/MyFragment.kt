@@ -7,5 +7,5 @@ import com.hunseong.bookbak.ui.base.BaseFragment
 
 class MyFragment : BaseFragment<FragmentMyBinding>() {
 
-    override fun getBinding(): FragmentMyBinding = FragmentMyBinding.inflate(layoutInflater)
+    override fun getViewBinding(): FragmentMyBinding = FragmentMyBinding.inflate(layoutInflater)
 }

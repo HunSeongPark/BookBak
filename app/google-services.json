@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "784321373690",
+    "project_id": "bookbak-dd611",
+    "storage_bucket": "bookbak-dd611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784321373690:android:b35f70906ffad06a523043",
+        "android_client_info": {
+          "package_name": "com.hunseong.bookbak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784321373690-5uibarc38jmk3u1o754abblsf89hoqen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hunseong.bookbak",
+            "certificate_hash": "fc02e1234138871ed08e4122e1bb8d47f4e15e74"
+          }
+        },
+        {
+          "client_id": "784321373690-jvohgh8p34uqeg0rraadouv74c4vmrmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkvbE_8NTWTdHHOKfjJY7BFYqPDenRjk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784321373690-jvohgh8p34uqeg0rraadouv74c4vmrmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,5 +6,5 @@ import com.hunseong.bookbak.ui.base.BaseFragment
 
 class FavoriteFragment : BaseFragment<FragmentFavoriteBinding>() {
 
-    override fun getBinding(): FragmentFavoriteBinding = FragmentFavoriteBinding.inflate(layoutInflater)
+    override fun getViewBinding(): FragmentFavoriteBinding = FragmentFavoriteBinding.inflate(layoutInflater)
 }

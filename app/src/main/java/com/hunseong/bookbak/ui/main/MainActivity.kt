@@ -1,4 +1,4 @@
-package com.hunseong.bookbak.ui
+package com.hunseong.bookbak.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,15 +8,15 @@ import com.hunseong.bookbak.R
 import com.hunseong.bookbak.databinding.ActivityMainBinding
 import com.hunseong.bookbak.extensions.gone
 import com.hunseong.bookbak.extensions.visible
+import com.hunseong.bookbak.ui.base.BaseActivity
 import com.hunseong.bookbak.util.KeepStateNavigator
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : BaseActivity<ActivityMainBinding>() {
+
+    override fun getViewBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         initNavigation()
     }
 

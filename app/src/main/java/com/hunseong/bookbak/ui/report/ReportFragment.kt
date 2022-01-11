@@ -7,5 +7,5 @@ import com.hunseong.bookbak.ui.base.BaseFragment
 
 class ReportFragment : BaseFragment<FragmentReportBinding>() {
 
-    override fun getBinding(): FragmentReportBinding = FragmentReportBinding.inflate(layoutInflater)
+    override fun getViewBinding(): FragmentReportBinding = FragmentReportBinding.inflate(layoutInflater)
 }
